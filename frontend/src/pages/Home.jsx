@@ -9,6 +9,7 @@ import { About } from '../components/About/About';
 
 import { Link } from "react-router-dom";
 import {BsArrowRight} from "react-icons/bs"
+import { ServiceList } from '../components/Services/ServiceList';
 
 
 
@@ -174,7 +175,23 @@ export const Home = () => {
 
       <About/>
 
-      
+      {/* ======== services section ======== */}
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">
+              Our Medical Services
+            </h2>
+            <p className="text_para text-center">
+              Experience world-class care for everyone at our health system,
+               where we provide unparalleled expertise and exceptional healthcare services.
+            </p>
+          </div>
+          <ServiceList />
+        </div>
+        
+      </section>
+      {/* ======== services section end ======== */}
     </>
   );
 };
