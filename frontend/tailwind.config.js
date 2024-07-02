@@ -12,7 +12,7 @@ export default {
         purpleColor: "#9771FF",
         irisBlueColor: "#01B5c5",
         headingColor: "#181A1E",
-        textColor: "#4ES45F",
+        textColor: "#4E545F",
       },
 
       boxShadow: {
