@@ -1,9 +1,7 @@
-import React from 'react'
-
 export const formateDate = (date, config) => {
   const defaultOptions = {
     day: 'numeric',
-    month: 'long',
+    month: 'short',
     year: 'numeric',
   };
   const options = config? config: defaultOptions;

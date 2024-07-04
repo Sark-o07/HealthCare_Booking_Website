@@ -1,4 +1,5 @@
 import React from 'react'
+import { formateDate } from "../../utils/formateDate";
 
 export const DoctorAbout = () => {
   return (
@@ -29,30 +30,61 @@ export const DoctorAbout = () => {
                 <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
                     <div>
                         <span className="text-irisBlueColor text-[15px]">
-                            23 June, 2008
+                        {formateDate('2013-12-12')} - {formateDate('2014-06-12')}
                         </span>
                         <p className="text-[16px] leading-6 font-medium text-textColor">
                             PHD in Oncology
                         </p>
                     </div>
                     <p className="text-[14px] leading-5 font-medium text-textColor">
-                        new Hope hospital, Titanium Valley.
+                        New Hope Hospital, Titanium Valley.
                     </p>
                 </li>
                 <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
                     <div>
                         <span className="text-irisBlueColor text-[15px]">
-                            23 June, 2008
+                            {formateDate('2013-12-12')} - {formateDate('2014-06-12')}
                         </span>
                         <p className="text-[16px] leading-6 font-medium text-textColor">
                             PHD in Oncology
                         </p>
                     </div>
                     <p className="text-[14px] leading-5 font-medium text-textColor">
-                        new Hope hospital, Titanium Valley.
+                        New Hope Hospital, Titanium Valley.
                     </p>
                 </li>
             </ul>
+        </div>
+
+        <div className="mt-12">
+        <h3 className='text-[20px] leading-[30px] text-headingColor font-semibold'>
+            Experience
+        </h3>
+
+        <ul className="grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5">
+            <li className='p-4 rounded bg-[#fff9ea]'>
+                <span className="text-yellowColor text-[15px] leading-6 font-semi-bold">
+                    {formateDate('07-08-2018')} - {formateDate('12-09-2022')}
+                </span>
+                <p className="text-[15px] leading-6 font-medium text-textColor">
+                    Sr. Surgeon
+                </p>
+                <p className="text-[14px] leading-5 font-medium text-textColor">
+                    New Hope Hospital, Titanium Valley.
+                </p>
+            </li>
+            <li className='p-4 rounded bg-[#fff9ea]'>
+                <span className="text-yellowColor text-[15px] leading-6 font-semi-bold">
+                    {formateDate('07-08-2018')} - {formateDate('12-09-2022')}
+                </span>
+                <p className="text-[15px] leading-6 font-medium text-textColor">
+                    Sr. Surgeon
+                </p>
+                <p className="text-[14px] leading-5 font-medium text-textColor">
+                    New Hope Hospital, Titanium Valley.
+                </p>
+            </li>
+        </ul>
         </div>
     </div>
   )
