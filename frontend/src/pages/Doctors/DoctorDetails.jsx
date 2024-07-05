@@ -3,12 +3,13 @@ import doctorImg from "../../assets/images/doctor-img02.png";
 import starIcon from '../../assets/images/Star.png'
 import { DoctorAbout } from './DoctorAbout';
 import { Feedback } from './Feedback';
+import SidePanel from './SidePanel';
 
 export const DoctorDetails = () => {
   const [tab, setTab] = useState('about');
 
   return (
-    <div className="max-w-[1170px] px-5 mx-auto">
+    <div className="max-w-[1170px] px-5 mx-auto mt-[80px]">
       <div className="grid md:grid-cols-3 gap-[50px]">
         <div className="md:col-span-2">
           <div className="flex items-center gap-5">
@@ -57,6 +58,10 @@ export const DoctorDetails = () => {
             { tab === 'about' && <DoctorAbout /> }
             { tab === 'feedback' &&  <Feedback /> }
           </div>
+        </div>
+
+        <div>
+          <SidePanel />
         </div>
       </div>
     </div>
